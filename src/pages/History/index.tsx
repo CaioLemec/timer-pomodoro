@@ -4,7 +4,7 @@ import { CyclesContext } from '../../contexts/CyclesContext'
 import { formatDistanceToNow } from 'date-fns'
 
 export function History() {
-  const { taskCycle } = useContext(CyclesContext)
+  const { cycles } = useContext(CyclesContext)
 
   return (
     <HistoryContainer>
@@ -20,7 +20,7 @@ export function History() {
             </tr>
           </thead>
           <tbody>
-            {taskCycle.map((cycle) => {
+            {cycles.map((cycle) => {
               return (
                 <tr key={cycle.id}>
                   <td>{cycle.task}</td>
