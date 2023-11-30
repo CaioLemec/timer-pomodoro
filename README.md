@@ -55,6 +55,8 @@ This project offers an intuitive and user-friendly interface, empowering users t
 <img src="/public/test.gif" width="75%"/>
 </p>
 
+- [Deploy](https://timer-pomodoro-six.vercel.app/)
+
 > `Alert 1:` For optimal experience, it is advisable not to use IE 6-8 as a browser due to certain styling features.
 
 ## Environment
