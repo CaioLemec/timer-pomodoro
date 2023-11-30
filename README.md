@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="logotype" title="Pomodoro Timer" src="public/ignite-logo.svg" width="10%" />
+    <img alt="logotype" title="Pomodoro Timer" src="public/logo-ignite.svg" width="10%" />
 </h3>
 
 <h1 align="center">Pomodoro Timer</h1>
