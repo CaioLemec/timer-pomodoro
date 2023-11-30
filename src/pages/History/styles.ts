@@ -11,7 +11,6 @@ export const HistoryContainer = styled.main`
     color: ${(props) => props.theme['gray-100']};
   }
 `
-
 export const HistoryList = styled.main`
   flex: 1;
   overflow: auto;
@@ -72,17 +71,14 @@ export const HistoryList = styled.main`
     }
   }
 `
-
 const STATUS_COLOR = {
   yellow: 'yellow-500',
   green: 'green-500',
   red: 'red-500',
 } as const
-
 interface StatusProps {
   statusColor: keyof typeof STATUS_COLOR
 }
-
 export const Status = styled.span<StatusProps>`
   display: flex;
   align-items: center;
@@ -95,5 +91,34 @@ export const Status = styled.span<StatusProps>`
     border-radius: 999px;
     background-color: ${(props) =>
       props.theme[STATUS_COLOR[props.statusColor]]};
+  }
+`
+export const NoDataContainer = styled.div`
+  flex: 1;
+  overflow: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme['gray-600']};
+  padding: 1rem;
+  text-align: left;
+  color: ${(props) => props.theme['gray-100']};
+  border-radius: 8px;
+
+  svg {
+    margin-bottom: 0%.875rem;
+  }
+
+  span {
+    color: var(--gray-300);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 `
